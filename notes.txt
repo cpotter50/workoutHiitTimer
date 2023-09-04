@@ -1,0 +1,10 @@
+Objectives
+	[ ] - Build the tool that builds interval timers
+	
+	[ ] - Create an interval timer template
+	
+	[ ] - Get interval timers constructed per the first tool
+	
+	[ ] - Have interval timers managed so that they sync with the main timer
+	
+	[ ] - Get interval timers to make noice when they finish

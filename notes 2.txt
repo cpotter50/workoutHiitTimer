@@ -1,0 +1,76 @@
+3 timers at 2 seconds each.
+
+From the range of 1 to 6 seconds:
+	Just move down the timers as normal.
+	
+Once you get to 7 seconds:
+	Return to the first timer and run it from 0.
+
+From 8 to 12 seconds:
+	Loop through the timers as you did the first time. 
+	
+	- - -	-	-	-		-	-	-	-		--	-	-	-		-	--	
+	
+	
+When any play button is hit:
+	Turn all play buttons into pause buttons. 
+	
+When any pause button is hit:
+	Turn all play buttons into pause buttons.
+			If the main timer was hit: Resume time.
+			If a timer's play button was hit: Play from 00:00 + all time of timer's before played timer
+
+
+	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+	
+Because of how I am rebuilding the dom every moment:
+
+	Play buttons will only show when the app is paused.
+	When the app is playing, they will be hidden. 
+	
+	
+	-	-	-	-	-	-		-	-	-	-	-	-		-	-	-	-
+	
+	
+When the timer is paused, hitting play from an interval timer reduces the time from the time amount of time that the pause button was held for.
+
+	> Fixed this problem by re-declaring all variables created at "0" to be "0" simulating landing on the page.
+	
+	-	-	-	-	-		-	-	-	-	-		--	-	-		-	-	-	-	-	-	-	-
+	
+To Do
+
+	< > - Style the timer which is currently ticking so that it stands out.
+	< > - Style timers to indicate that they cannot be interacted with when timer is running.
+	< > - Style the timer-creation tool.
+	< > - Get sounds to play when a timer finishes.
+	< > - Create spaces for ads.
+	< > - Animate when you shift a timer around.
+	< > - Get assets to be hosted on a server for the web version to reference.
+	< > - Look into converting this web-page app into a phone app. 
+	< > - Make app as pretty as possible
+	
+	
+
+
+- - - -  --	-	-	-	-	-		-	-	-	-	-	-	-	-	-	-	-	-	-
+
+	> Have a timer display its set alarm sound.
+	
+	> Style everything nicely. 
+
+
+
+
+-	-	-	-	-	-		-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+
+	Features
+		> Timer runs while phone is in idle mode
+		> Something for allowing users to configure custom sounds
+		>
+
+
+
+
+
+

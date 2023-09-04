@@ -1,0 +1,48 @@
+<!doctype html>
+<head>
+	<script src="intervalClock.js"></script>
+	<script src="workoutClock.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="clockContainer">
+		<div>
+			<p id="clock">00:00</p>
+			<p id="deciseconds">00</p>
+		</div>
+		<input id="playButtonMain" type="image" src="img_button_play1.png" 
+							onMouseOver="this.src='img_button_play2.png'" 
+							onMouseOut="this.src='img_button_play1.png'">
+	</div>
+	
+	<div id="timerContainer">
+	</div>
+	
+	<div id="timerMaker">
+		<div class="body">
+			<div id="timerMakerConfiguration">
+				<input id="timerMakerMinutes" class="timerMakerInput" placeholder="00 minutes">
+				:
+				<input id="timerMakerSeconds" class="timerMakerInput" placeholder="30 seconds">
+				<div>
+					<p> Alarm Sound : </p>
+					<select name="alarm" id="timerMakerAlarm"  class="timerMakerInput">
+						<option value="airhorn1.mp3"  	class="timerMakerInput">Air Horn 1</option>
+						<option value="airhorn2.mp3"  	class="timerMakerInput">Air Horn 2</option>
+						<option value="truckhorn1.mp3"  class="timerMakerInput">Truck Horn</option>
+					</select>
+				</div>				
+			</div>
+			<button id="addTimerButton">Add Timer</button>
+		</div>
+		<div class="footer">
+			<audio id="audioPlayer" controls>
+					<source id="audioSource" src="airhorn1.mp3" type="audio/mp3">
+			</audio>
+		</div>
+	</div>
+	
+	<audio id="intervalAlarmPlayer" src="airhorn1.mp3" type="audio/mp3">
+	</audio>
+</body>

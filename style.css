@@ -1,0 +1,172 @@
+body {
+	background-color: #455368;
+	box-sizing: border-box;
+	padding: 1em;
+}
+
+#clockContainer {
+	/*background-color: #282c66;
+	*/
+	background-image: linear-gradient(to bottom right, #282c66, #207fd8);
+	color: #fcf4fa;
+	font-size: 5em;
+	font-family: "Lucida Console", Monaco, Copperplate;
+	font-weight: bolder;
+	letter-spacing: .7em;
+	margin-bottom: 1em;
+	padding: 0.2em;
+	text-align: center;
+}
+
+#deciseconds {
+	
+}
+
+#clockContainer p{
+	display: inline-block;
+}
+
+#clockContainer h5{
+	display: inline-block;
+}
+
+#timerContainer {
+}
+
+.timer {
+	align-items: center;
+	background-color: #1c2054;
+	display: flex;
+	height: 5.5em;
+	justify-content: center;
+	margin-bottom: 1em;
+	width: 80%;
+	margin: 1em auto;
+}
+
+.timer div {
+	text-align: center;
+	height: 100%;
+}
+
+.timerHeader {
+	width: 15%;
+	background-color: #202123;
+}
+
+.timerBody {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70%;
+}
+
+.timerBody p {
+	color: #67b4fc;
+	font-size: 1.5em;
+	font-weight: bolder;
+	letter-spacing: 2px;
+	margin: 0 1em;
+}
+
+.timerBody input{
+	width: 50px;
+	height: 50px;
+}
+
+.timerFooter {
+	width: 15%;
+}
+
+.timerFooter button {
+	border: none;
+	background-color: #7f3638;
+	color: white;
+	font-size: 2em;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+
+.activeTimer {
+	background-color: #3143ce;
+}
+
+.activeTimer .timerFooter button {
+	background-color: #ad393d;
+}
+
+
+.beingDragged {
+	background-color: #3169b7;
+}
+
+.concealed {
+	display: none;
+}
+
+#timerMaker {
+	background-color: #272a72;
+}
+
+#timerMaker .body {
+	display: flex;
+	color: white;
+	font-weight: bolder;
+	letter-spacing: 2px;
+	padding: 1em;
+	text-align: center;
+}
+
+#timerMaker .body p {
+	display: inline-block;
+}
+
+#timerMakerConfiguration {
+	display: inline-block;
+	flex: 60%;
+}
+
+#timerMaker .body button{
+	background-color: #21b273;
+	border: none;
+	color: white;
+	flex: 30%;
+	padding: 2em;
+}
+
+
+#timerMaker .footer {
+	background-color: #191919;
+	text-align: center;
+	width: 100%;
+}
+
+
+.timerMakerInput {
+	background-color: #111451;
+	border: none;
+	color: #67b4fc;
+	font-weight: bolder;
+	padding: 5px;
+}
+
+#timerMakerMinutes {
+	text-align: right;
+}
+
+.timerFooter button:hover {
+	background-color: #c12a34;
+}
+
+@keyframes droppedElement {
+	from {background-color: green;}
+	to {background-color: #1c2054;}
+}
+
+.justDropped {
+	animation-name: droppedElement;
+	animation-duration: 1s;
+}
