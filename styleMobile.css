@@ -31,6 +31,7 @@ body {
 .timer {
 	background-color: #171d5e;
 	display: flex;
+	font-size: 1.4em;
 	padding: 0.5em;
 	margin: 1em auto;
 	width: 75%;
@@ -44,7 +45,7 @@ body {
 }
 
 .timer .timerBody input {
-	width: 5em;
+	width: 7em;
 }
 
 .timer .timerBody p {
@@ -69,6 +70,7 @@ body {
 #timerMaker {
 	background-color: #21254f;
 	color: #d3e1ea;
+	font-size: 1.4em;
 	font-weight: bolder;
 	position: fixed;
 	bottom: 0;
@@ -84,7 +86,7 @@ body {
 	background-color: #07091e;
 	border: none;
 	color: #d3e1ea;
-	font-size: 1.2em;
+	font-size: 2em;
 	padding: 5px;
 	width: 40%;
 }
