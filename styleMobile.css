@@ -1,0 +1,129 @@
+body {
+	background-color: #323d44;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+#clockContainer {
+	background-image: linear-gradient(to bottom right, #282c66, #207fd8);
+	color: #d3e1ea;
+	font-family: "Lucida Console", Monaco, Copperplate;
+	font-size: 2em;
+	padding: 1em;
+	text-align: center;	
+}
+
+#clock {
+	font-size: 4em;
+	display: inline-block;
+}
+
+#deciseconds {
+	display: inline-block;
+}
+
+#timerContainer {
+	margin-bottom: 270px;
+	text-align: center;
+	width: 100%;
+}
+
+.timer {
+	background-color: #171d5e;
+	display: flex;
+	padding: 0.5em;
+	margin: 1em auto;
+	width: 75%;
+}
+
+.timer .timerBody {
+	display: flex;
+	flex: 80%;
+	justify-content: center;
+	align-items: center;
+}
+
+.timer .timerBody input {
+	width: 5em;
+}
+
+.timer .timerBody p {
+	color: #d3e1ea;
+	font-weight: bolder;
+	letter-spacing: 0.15em;
+	margin: 0 1em;
+}
+
+.timer .timerFooter {
+	flex: 20%;
+	text-align: center;
+}
+
+.timer .timerFooter button {
+	border: none;
+	padding: 2em;
+	height: 100%;
+	width: 100%;
+}
+
+#timerMaker {
+	background-color: #21254f;
+	color: #d3e1ea;
+	font-weight: bolder;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+#timerMaker .body {
+	text-align: center;
+	padding-top: 1em;
+}
+
+.timerMakerInput {
+	background-color: #07091e;
+	border: none;
+	color: #d3e1ea;
+	font-size: 1.2em;
+	padding: 5px;
+	width: 40%;
+}
+
+#timerMakerMinutes {
+	text-align: right;
+}
+
+#timerMakerAlarm {
+	text-align: center;
+	margin-bottom: 1em;
+	min-width: 60%;
+}
+
+#addTimerButton {
+	border: none;
+	padding: 1em;
+	width: 100%;
+}
+
+#timerMaker .footer {
+	background-color: #1b1b24;
+	text-align: center;
+}
+
+.activeTimer {
+	background-color: #3143ce;
+}
+
+.beingDragged {
+	background-color: #3169b7;
+}
+
+@keyframes droppedElement {
+	from {background-color: green;}
+	to {background-color: #1c2054;}
+}
+
+.justDropped {
+	animation-name: droppedElement;
+	animation-duration: 1s;
+}
