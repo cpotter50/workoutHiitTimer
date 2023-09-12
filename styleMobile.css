@@ -139,6 +139,10 @@ body {
 	animation-duration: 1s;
 }
 
+.concealed {
+	display: none;
+}
+
 
 @media only screen and (min-width: 1265px) {
 	
