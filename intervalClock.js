@@ -24,16 +24,16 @@ function SetupIntervalTool () {
 		}
 	});
 	
-	/*
-	intervalMakerSecondsDOM.value = 1;
-	CreateIntervalClock ();
-	intervalMakerSecondsDOM.value = 2;
-	CreateIntervalClock ();
-	intervalMakerSecondsDOM.value = 3;
+	
+	intervalMakerSecondsDOM.value = 4;
 	CreateIntervalClock ();
 	intervalMakerSecondsDOM.value = 4;
 	CreateIntervalClock ();
-	*/
+	intervalMakerSecondsDOM.value = 4;
+	CreateIntervalClock ();
+	intervalMakerSecondsDOM.value = 4;
+	CreateIntervalClock ();
+	
 
 	/*
 	intervalMakerSecondsDOM.value = 5;
@@ -261,6 +261,9 @@ function ToggleClockFromInterval () {
 		return timer.id == timerID;
 	}) [0];
 	
+	console.log ("The id of the clicked timer: " + timerID);
+	console.log ("The timer retrieved: ", targetTimer);
+	
 	let accumulatedSeconds = 0;
 	
 	for (let i = 0; i < activeIntervals.length; i++) {
@@ -272,11 +275,12 @@ function ToggleClockFromInterval () {
 	//totalPauseTime = 0;
 	console.log ("date.now", Date.now (), ", total seconds: ", accumulatedSeconds, ", the timer: ", targetTimer); 
 	startTime = Date.now () - (accumulatedSeconds * 1000);
-	//pauseStartTime = Date.now ();
+	pauseStartTime = Date.now ();
 	
-	//IncreaseTimer ();
+	IncreaseTimer ();
 	
 	//tell the clock to run. 
+	restartClock = false;
 	ToggleClock ();
 }
 
