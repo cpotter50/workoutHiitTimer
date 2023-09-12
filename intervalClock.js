@@ -24,7 +24,7 @@ function SetupIntervalTool () {
 		}
 	});
 	
-	
+	/*
 	intervalMakerSecondsDOM.value = 4;
 	CreateIntervalClock ();
 	intervalMakerSecondsDOM.value = 4;
@@ -33,7 +33,7 @@ function SetupIntervalTool () {
 	CreateIntervalClock ();
 	intervalMakerSecondsDOM.value = 4;
 	CreateIntervalClock ();
-	
+	*/
 
 	/*
 	intervalMakerSecondsDOM.value = 5;
