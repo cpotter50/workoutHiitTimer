@@ -10,7 +10,8 @@ body {
 
 #adspaceMobile {
 	background: #191919;
-	display: block;
+	display: flex;
+	justify-content: center;
 	margin-top: 20px;
 	text-align: center;
 	width: 100%;
@@ -174,7 +175,8 @@ body {
 
 	#adspace {
 		background: #191919;
-		display: block;
+		display: flex;
+		justify-content: center;
 		margin-top: 20px;
 		text-align: center;
 		width: 100%;
