@@ -31,7 +31,7 @@
 				<div>
 					<p> Alarm Sound : </p>
 					<select name="alarm" id="timerMakerAlarm"  class="timerMakerInput">
-						<option value="airhorn1.mp3"  	class="timerMakerInput">Air Horn 1</option>
+						<option value="airhorn1.mp3"  	class="timerMakerInput" selected>Air Horn 1</option>
 						<option value="airhorn2.mp3"  	class="timerMakerInput">Air Horn 2</option>
 						<option value="truckhorn1.mp3"  class="timerMakerInput">Truck Horn</option>
 					</select>
@@ -41,7 +41,10 @@
 		</div>
 		<div class="footer">
 			<audio id="audioPlayer" controls>
-					<source id="audioSource" src="ping.mp3" type="audio/mp3">
+					<source id="audioSource" src="airhorn1.mp3" type="audio/mp3">
+			</audio>
+			<audio id="audioPlayerHidden" style="display: none;">
+					<source id="audioSourceHidden" src="ping.mp3" type="audio/mp3">
 			</audio>
 		</div>
 	</div>
