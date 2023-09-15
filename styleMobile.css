@@ -4,6 +4,18 @@ body {
 	margin: 0;
 }
 
+#adspace {
+	display: none;
+}
+
+#adspaceMobile {
+	background: #191919;
+	display: block;
+	margin-top: 20px;
+	text-align: center;
+	width: 100%;
+}
+
 #clockContainer {
 	background-image: linear-gradient(to bottom right, #282c66, #207fd8);
 	color: #d3e1ea;
@@ -158,6 +170,18 @@ body {
 		background-color: #455368;
 		box-sizing: border-box;
 		padding: 1em;
+	}
+
+	#adspace {
+		background: #191919;
+		display: block;
+		margin-top: 20px;
+		text-align: center;
+		width: 100%;
+	}
+
+	#adspaceMobile {
+		display: none;
 	}
 
 	#clockContainer {
