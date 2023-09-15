@@ -12,13 +12,14 @@ let timerIntervalId;
 let pauserIntervalId;
 
 let clockDOM, playButtonMainDOM, decisecondsDOM, addTimerButtonDOM,
-	audioSourceDOM, timerMakerAlarmDOM, audioPlayerDOM, intervalAlarmPlayerDOM;
+	audioSourceDOM, timerMakerAlarmDOM, audioPlayerDOM, intervalAlarmPlayerDOM,
+	audioPlayerHiddenDOM;
 
 function Setup () {
 	clockDOM = document.getElementById ("clock");
 	playButtonMainDOM = document.getElementById ("playButtonMain");
-	decisecondsDOM = document.getElementById ("deciseconds");
 		playButtonMainDOM.onclick = ToggleClock;
+	decisecondsDOM = document.getElementById ("deciseconds");
 	addTimerButtonDOM = document.getElementById ("addTimerButton");
 		addTimerButtonDOM.onclick = CreateIntervalClock;
 	audioSourceDOM = document.getElementById ("audioSource");
@@ -26,6 +27,7 @@ function Setup () {
 	audioPlayerDOM = document.getElementById ("audioPlayer");
 		timerMakerAlarmDOM.onclick = SetAudioSource;
 	intervalAlarmPlayerDOM = document.getElementById ("intervalAlarmPlayer");
+	audioPlayerHiddenDOM = document.getElementById ("audioPlayerHidden");
 	
 	SetupIntervalTool ();
 }
@@ -33,7 +35,7 @@ function Setup () {
 function SetAudioSource () {
 	//console.log ("You clicked: ", this.value);
 	audioSourceDOM.src = this.value;
-	audioPlayerDOM.load ();
+	audioPlayerDOM.load ();	
 }
 
 function ToggleClock () {
@@ -59,6 +61,10 @@ function ToggleClock () {
 		pauseStartTime = Date.now ();	
 		pauserIntervalId = setInterval (IncreasePauseTimer, 30);
 	}
+	
+	audioPlayerHiddenDOM.load ();
+	audioPlayerHiddenDOM.play ();
+	
 	
 	TogglePlayButtonGraphics ();
 	ToggleIntervalPlayButton ();
