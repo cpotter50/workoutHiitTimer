@@ -87,6 +87,12 @@ body {
 	padding-top: 1em;
 }
 
+#timerMaker .body button {
+	background-color: #22ad71;
+	color: #f9f9f9;
+}
+
+
 .timerMakerInput {
 	background-color: #07091e;
 	border: none;
@@ -118,10 +124,12 @@ body {
 #timerMaker .footer {
 	background-color: #1b1b24;
 	text-align: center;
+	padding: 20px 0;
 }
 
+
 .activeTimer {
-	background-color: #3143ce;
+	background-color: #3748c6;
 }
 
 
@@ -208,7 +216,7 @@ body {
 
 	.timerHeader {
 		width: 15%;
-		background-color: #202123;
+		/*background-color: #202123;*/
 	}
 
 	.timerBody {
@@ -248,7 +256,7 @@ body {
 
 
 	.activeTimer {
-		background-color: #3143ce;
+		background-color: #3748c6;
 	}
 
 	.activeTimer .timerFooter button {
@@ -288,7 +296,7 @@ body {
 	}
 
 	#timerMaker .body button{
-		background-color: #21b273;
+		background-color: #22ad71;
 		border: none;
 		color: white;
 		font-size: 20px;
@@ -298,8 +306,8 @@ body {
 
 	#timerMaker .footer {
 		background-color: #191919;
-		
 		text-align: center;
+		padding: 0;
 		width: 100%;
 	}
 
